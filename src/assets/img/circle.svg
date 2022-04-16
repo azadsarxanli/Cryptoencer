@@ -1,0 +1,61 @@
+<svg width="807" height="807" viewBox="0 0 807 807" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_1_255)">
+<circle cx="403.219" cy="403.837" r="287.837" fill="url(#paint0_radial_1_255)" fill-opacity="0.6"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M349.318 344.635C209.619 360.972 106 420.937 106 492.41C106 576.452 249.269 644.582 426 644.582C602.731 644.582 746 576.452 746 492.41C746 418.624 635.567 357.104 489.01 343.187" stroke="url(#paint1_angular_1_255)" stroke-width="1.14502" stroke-linecap="round"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M349.318 345.706C209.619 362.044 106 422.008 106 493.481C106 577.524 249.269 645.653 426 645.653C602.731 645.653 746 577.524 746 493.481C746 419.696 635.567 358.176 489.01 344.259" stroke="url(#paint2_angular_1_255)" stroke-width="1.14502" stroke-linecap="round"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M499.888 348.065C640.997 363.926 746 424.212 746 496.161C746 580.203 602.731 648.333 426 648.333C249.269 648.333 106 580.203 106 496.161C106 425.865 206.235 366.701 342.447 349.228" stroke="url(#paint3_angular_1_255)" stroke-width="1.14502" stroke-linecap="round"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M331.57 355.01C200.932 374.169 106 432.037 106 500.448C106 584.49 249.269 652.62 426 652.62C602.731 652.62 746 584.49 746 500.448C746 429.819 644.814 370.429 507.617 353.27" stroke="url(#paint4_angular_1_255)" stroke-width="1.14502" stroke-linecap="round"/>
+</g>
+<g style="mix-blend-mode:overlay">
+<path d="M519.354 360.748C650.546 379.746 746 437.744 746 506.343C746 590.385 602.731 658.515 426 658.515C249.269 658.515 106 590.385 106 506.343C106 439.997 195.285 383.569 319.833 362.746" stroke="url(#paint5_angular_1_255)" stroke-width="1.14502" stroke-linecap="round"/>
+</g>
+<defs>
+<filter id="filter0_f_1_255" x="0.247536" y="0.865211" width="805.943" height="805.943" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="57.5674" result="effect1_foregroundBlur_1_255"/>
+</filter>
+<radialGradient id="paint0_radial_1_255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(372.709 395.202) rotate(89.3883) scale(323.547)">
+<stop stop-color="#2954A3"/>
+<stop offset="1" stop-color="#101241"/>
+</radialGradient>
+<radialGradient id="paint1_angular_1_255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430.617 507.016) scale(340.959 159.436)">
+<stop offset="0.458333" stop-color="white"/>
+<stop offset="0.717799" stop-color="white" stop-opacity="0"/>
+<stop offset="0.782437" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0.4"/>
+</radialGradient>
+<radialGradient id="paint2_angular_1_255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430.617 508.087) scale(340.959 159.436)">
+<stop offset="0.458333" stop-color="white"/>
+<stop offset="0.717799" stop-color="white" stop-opacity="0"/>
+<stop offset="0.782437" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0.4"/>
+</radialGradient>
+<radialGradient id="paint3_angular_1_255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430.617 511.281) scale(340.959 158.84)">
+<stop offset="0.458333" stop-color="white"/>
+<stop offset="0.717799" stop-color="white" stop-opacity="0"/>
+<stop offset="0.782437" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0.4"/>
+</radialGradient>
+<radialGradient id="paint4_angular_1_255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430.617 515.987) scale(340.959 158.354)">
+<stop offset="0.458333" stop-color="white"/>
+<stop offset="0.717799" stop-color="white" stop-opacity="0"/>
+<stop offset="0.782437" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0.4"/>
+</radialGradient>
+<radialGradient id="paint5_angular_1_255" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(430.617 522.605) scale(340.959 157.517)">
+<stop offset="0.458333" stop-color="white"/>
+<stop offset="0.717799" stop-color="white" stop-opacity="0"/>
+<stop offset="0.782437" stop-color="white" stop-opacity="0"/>
+<stop offset="1" stop-color="white" stop-opacity="0.4"/>
+</radialGradient>
+</defs>
+</svg>

@@ -1,0 +1,267 @@
+.main-wrapper{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px !important;
+    position: relative;
+    z-index: 5;
+}
+
+.main-heading{
+    position: relative;
+    z-index: 15;
+}
+
+.main-heading h1{
+    text-align: center;
+    font-family: 'Integral';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+
+.main-heading p{
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 35px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 30.73px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.illustration1{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    z-index: -1;
+    animation: mercury-group 20s linear infinite;
+
+}
+
+.illustration2{
+    position: absolute;
+    top: 18%;
+    right: 130px;
+    z-index: -1;
+    animation: mercury 18s linear infinite;
+
+}
+
+.social-gradient{
+    display: flex;
+    margin: -35% auto;
+    margin-bottom: 0 !important;
+    z-index: -5;
+}
+
+.social-gradient img{
+    margin: 0 auto;
+}
+
+.social-gradient img{
+    filter: blur(115.135px);
+}
+
+.social-circle{
+    width: 70%;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.social-circle-img{
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+.social-shadow-img{
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -30%);
+    filter: blur(115.135px);
+    z-index: -6;
+}
+
+
+.social-circle-text{
+    width: 100%;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-48%, 48%);
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-circle-text h3{
+    font-family: 'Integral';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    color: #FFFFFF;
+}
+
+.social-circle-icons{
+    position: relative;
+    z-index: 20;
+}
+
+.social-circle-facebook-img{
+    position: absolute;
+    top: 10%;  
+    left: 15%; 
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+}
+
+.social-circle-facebook-img:hover{
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+
+
+.social-circle-youtube-img{
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-65%, -95%);
+    transition: 0.2s;
+}
+
+.social-circle-youtube-img:hover{
+    transform: translate(-65%, -95%) scale(1.1);
+}
+
+
+.social-circle-instagram-img{
+    position: absolute;
+    top: 50%;  
+    right: 0%; 
+    transform: translate(-25%, -62%);
+    transition: 0.2s;
+}
+
+.social-circle-instagram-img:hover{
+    transform: translate(-25%, -62%) scale(1.1);
+}
+
+
+.social-circle-telegram-img{
+    position: absolute;
+    top: 100%;  
+    left: 35%; 
+    transform: translate(-100%, 40%);
+    transition: 0.2s;
+}
+
+.social-circle-telegram-img:hover{
+    transform: translate(-100%, 40%) scale(1.1);
+}
+
+
+.social-circle-twitter-img{
+    position: absolute;
+    top: 100%;  
+    left: 40%; 
+    transform: translate(0%, 60%);
+    transition: 0.2s;
+}
+
+
+.social-circle-twitter-img:hover{
+    transform: translate(0%, 60%) scale(1.1);
+}
+
+
+.social-circle-tiktok-img{
+    position: absolute;
+    top: 100%;  
+    right: 0%; 
+    transform: translate(0%, 50%);
+    transition: 0.2s;
+}
+
+.social-circle-tiktok-img:hover{
+    transform: translate(0%, 50%) scale(1.1);
+}
+    
+
+.social-circle-bg-img{
+    position: absolute;
+    top: 50px;
+    left: -45%;
+}
+
+@keyframes mercury-group {
+    0% {
+      transform: rotateZ(0deg);
+    }
+
+    50%{
+        transform: rotateZ(-20deg);
+    }
+  
+    100% {
+      transform: rotateZ(20deg);
+    }
+}
+
+@keyframes mercury{
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+    
+}
+
+/* @keyframes youtube{
+    0% {
+        transform: translate(-65%, -95%) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(-65%, -95%) rotateZ(360deg);
+    }
+}
+
+@keyframes facebook{
+    0% {
+        transform: rotateZ(0deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes instagram{
+    0% {
+        transform: translate(-25%, -62%) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(-25%, -62%) rotateZ(360deg);
+    }
+}
+
+@keyframes telegram{
+    0% {
+        transform: translate(-100%, 40%) rotateZ(0deg);
+    }
+    100% {
+        transform: translate(-100%, 40%) rotateZ(360deg);
+    }
+} */
