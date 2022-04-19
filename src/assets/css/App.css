@@ -41,7 +41,7 @@ body {
   margin: 0 auto;
 }
 
-@media screen and (min-width:1024px) and (max-width: 1228px) {
+@media screen and (min-width:1024px) and (max-width: 1440px) {
   header{
     width: 98% !important;
   }
