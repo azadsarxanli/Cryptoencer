@@ -67,8 +67,15 @@ header {
 }
 
 .disco-ball{
+    width: 650px;
+    height: 650px;
     position: absolute;
     top: 50%;  
     left: 50%; 
-    transform: translate(-50%, -15%);
+    transform: translate(-50%, -30%);
+}
+
+.disco-ball img{
+    width: 100%;
+    height: 100%;
 }

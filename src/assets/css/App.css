@@ -20,7 +20,45 @@ body {
 
 }
 
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e20ff6;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea00ff;
+}
+
 .wrapper{
   max-width: 1920px;
   margin: 0 auto;
+}
+
+@media screen and (min-width:1024px) and (max-width: 1228px) {
+  header{
+    width: 98% !important;
+  }
+
+  .main-wrapper{
+    width: 100% !important;
+  }
+
+  .partner-wrapper{
+    width: 95% !important;
+  }
+
+  .main-heading p{
+    width: 100% !important;
+  }
+  
+  .illustration1{
+    left: 0% !important;
+  }
 }

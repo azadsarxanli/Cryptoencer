@@ -1,4 +1,8 @@
 .partner-wrapper{
+    background-image: url('../img/Titik-titik2.png');
+    background-size: contain;
+    background-position: top right;
+    background-repeat: no-repeat;
     position: relative;
     z-index: 15;
     width: 75%;
@@ -21,21 +25,74 @@
 .partner-container{
     width: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
-.partner-first-images{
+.partner-first{
     position: relative;
 }
 
-.parnter-first-img{
+.partner-first-shadow{
+    width: 575px;
+    height: 575px;
     position: absolute;
-    top:  45%;
-    left: 20%;
+    top: -25%;
+    left: -15%;
+    z-index: -15;
 }
 
-.partner-first-desc h4{
-    font-family: 'Integral CF';
+.partner-first-images,
+.partner-second-images,
+.partner-third-images{
+    position: relative;
+}
+
+.partner-first-icon,
+.partner-third-icon{
+    width: 221;
+    transition: 0.3s;
+}
+
+.parnter-second-icon{
+    transform: rotate(-15deg);
+    width: 221px;
+    transition: 0.3s;
+}
+
+.parnter-first-img,
+.parnter-second-img,
+.parnter-third-img{
+    position: absolute;
+    top:  50%;
+    left: 15%;
+    z-index: 5;
+}
+
+.partner-first-bg-circle,
+.partner-second-bg-circle{
+    position: absolute;
+    top:  63%;
+    left: 28%;
+}
+
+.partner-third-bg-circle{
+    position: absolute;
+    top:  48%;
+    left: 28%;
+}
+
+
+.partner-first-desc,
+.partner-second-desc,
+.partner-third-desc{
+    margin-top: 140px;
+}
+
+.partner-first-desc h4,
+.partner-second-desc h4,
+.partner-third-desc h4{
+    font-family: 'Integral';
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -44,7 +101,9 @@
     color: #FFFFFF;
 }
 
-.partner-first-desc p{
+.partner-first-desc p,
+.partner-second-desc p,
+.partner-third-desc p{
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 500;
@@ -52,4 +111,5 @@
     line-height: 139.7%;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 20px;
 }

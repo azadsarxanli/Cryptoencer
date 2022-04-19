@@ -37,24 +37,35 @@
 }
 
 .illustration1{
+    width: 260px;
     position: absolute;
     top: 25px;
-    left: 40px;
+    left: 5%;
     z-index: -1;
     animation: mercury-group 20s linear infinite;
+}
 
+.illustration1 img{
+    width: 100%;
 }
 
 .illustration2{
+    width: 200px;
+    height: 200px;
     position: absolute;
     top: 18%;
-    right: 130px;
+    right: 15%;
     z-index: -1;
     animation: mercury 18s linear infinite;
+}
 
+.illustration2 img{
+    width: 100%;
+    height: 100%;
 }
 
 .social-gradient{
+    width: 100%;
     display: flex;
     margin: -35% auto;
     margin-bottom: 0 !important;
@@ -62,10 +73,8 @@
 }
 
 .social-gradient img{
+    width: 100%;
     margin: 0 auto;
-}
-
-.social-gradient img{
     filter: blur(115.135px);
 }
 
@@ -78,19 +87,22 @@
 }
 
 .social-circle-img{
+    width: 100%;
     position: absolute;
     top: 50%;  
     left: 50%; 
-    transform: translate(-50%, -50%);
+    transform: translate(-57%, -60%);
 }
 
 .social-shadow-img{
+    width: 575px;
+    height: 575px;
     position: absolute;
     top: 50%;  
     left: 50%; 
     transform: translate(-50%, -30%);
-    filter: blur(115.135px);
-    z-index: -6;
+    filter: blur(55px);
+    z-index: -3;
 }
 
 
@@ -99,7 +111,7 @@
     position: absolute;
     top: 50%;  
     left: 50%; 
-    transform: translate(-48%, 48%);
+    transform: translate(-52%, -50%);
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -120,56 +132,61 @@
     z-index: 20;
 }
 
+.social-circle-icon{
+    width: 200px;
+    height: 200px;
+}
+
 .social-circle-facebook-img{
     position: absolute;
-    top: 10%;  
-    left: 15%; 
-    transform: translate(-50%, -50%);
+    top: 0;  
+    left: 0; 
+    transform: translate(-5%, -100%);
     transition: 0.2s;
 }
 
 .social-circle-facebook-img:hover{
-    transform: translate(-50%, -50%) scale(1.1);
+    transform: translate(-5%, -100%) scale(1.1);
 }
 
 
 
 .social-circle-youtube-img{
     position: absolute;
-    top: 50%;  
+    top: 0;  
     left: 50%; 
-    transform: translate(-65%, -95%);
+    transform: translate(-83%, -125%);
     transition: 0.2s;
 }
 
 .social-circle-youtube-img:hover{
-    transform: translate(-65%, -95%) scale(1.1);
+    transform: translate(-83%, -125%) scale(1.1);
 }
 
 
 .social-circle-instagram-img{
     position: absolute;
-    top: 50%;  
+    top: 0%;  
     right: 0%; 
-    transform: translate(-25%, -62%);
+    transform: translate(-30%, -107%);
     transition: 0.2s;
 }
 
 .social-circle-instagram-img:hover{
-    transform: translate(-25%, -62%) scale(1.1);
+    transform: translate(-30%, -107%) scale(1.1);
 }
 
 
 .social-circle-telegram-img{
     position: absolute;
     top: 100%;  
-    left: 35%; 
-    transform: translate(-100%, 40%);
+    left: 5%; 
+    transform: translate(0%, 20%);
     transition: 0.2s;
 }
 
 .social-circle-telegram-img:hover{
-    transform: translate(-100%, 40%) scale(1.1);
+    transform: translate(0%, 20%) scale(1.1);
 }
 
 
@@ -177,13 +194,13 @@
     position: absolute;
     top: 100%;  
     left: 40%; 
-    transform: translate(0%, 60%);
+    transform: translate(-10%, 35%);
     transition: 0.2s;
 }
 
 
 .social-circle-twitter-img:hover{
-    transform: translate(0%, 60%) scale(1.1);
+    transform: translate(-10%, 35%) scale(1.1);
 }
 
 
@@ -191,12 +208,12 @@
     position: absolute;
     top: 100%;  
     right: 0%; 
-    transform: translate(0%, 50%);
+    transform: translate(-15%, 10%);
     transition: 0.2s;
 }
 
 .social-circle-tiktok-img:hover{
-    transform: translate(0%, 50%) scale(1.1);
+    transform: translate(-15%, 10%) scale(1.1);
 }
     
 
@@ -206,7 +223,7 @@
     left: -45%;
 }
 
-@keyframes mercury-group {
+/* @keyframes mercury-group {
     0% {
       transform: rotateZ(0deg);
     }
@@ -218,8 +235,8 @@
     100% {
       transform: rotateZ(20deg);
     }
-}
-
+} */
+/* 
 @keyframes mercury{
     0% {
       transform: rotateZ(0deg);
@@ -228,7 +245,7 @@
       transform: rotateZ(360deg);
     }
     
-}
+} */
 
 /* @keyframes youtube{
     0% {
