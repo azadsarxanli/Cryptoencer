@@ -155,12 +155,12 @@
     position: absolute;
     top: 0;  
     left: 50%; 
-    transform: translate(-83%, -125%);
+    transform: translate(-74%, -135%);
     transition: 0.2s;
 }
 
 .social-circle-youtube-img:hover{
-    transform: translate(-83%, -125%) scale(1.1);
+    transform: translate(-74%, -135%) scale(1.1);
 }
 
 
