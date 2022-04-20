@@ -124,10 +124,50 @@
     margin-top: 14px;
 }
 
+.table-main{
+    position: relative;
+}
+
+.table-main-bg-1{
+    position: absolute;
+    top: 5%;
+    left: -10%;
+}
+
+.table-main-bg-2{
+    position: absolute;
+    top: 20%;
+    right: -10%;
+}
+
+.table-main-bg-3{
+    position: absolute;
+    top: 30%;
+    left: -17%;
+}
+
+.table-main-bg-4{
+    position: absolute;
+    top: 40%;
+    right: -10%;
+}
+
+.table-main-bg-5{
+    position: absolute;
+    top: 78%;
+    left: -17%;
+}
+
+.table-main-bg-6{
+    position: absolute;
+    bottom: -12%;
+    right: -5%;
+}
+
 table{
     margin-top: 30px;
     width: 100%;
-    height: 1300px;
+    height: 2361px;
     background: rgba(0, 0, 0, 0.04);
     backdrop-filter: blur(105px);
     border-collapse: collapse;
@@ -159,4 +199,17 @@ thead th:nth-child(5){
 
 tbody{
     border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.table-pagination{
+    margin-top: 40px !important;
+    margin-bottom: 15% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root{
+    color: white !important;
 }

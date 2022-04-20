@@ -15,7 +15,7 @@
 }
 
 body {
-  height: 300vh;
+  height: 800vh !important;
   background: #0F103F;
 }
 
