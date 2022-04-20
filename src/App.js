@@ -3,6 +3,7 @@ import Header from './components/Header'
 import { Fragment } from 'react';
 import Main from './components/Main';
 import Partner from './components/Partner';
+import Table from './components/Table';
 
 function App() {
   return (
@@ -12,6 +13,8 @@ function App() {
       <Main/>
 
       <Partner/>
+
+      <Table/>
 
     </Fragment>
   );

@@ -7,6 +7,7 @@ import caesar from '../assets/img/caesar.png'
 import elliot from '../assets/img/elliot.png'
 import travlado from '../assets/img/travlado.png'
 import lightshadow from '../assets/img/lightshadow.png'
+import tiktik2 from '../assets/img/Titik-titik2.png'
 
 function Partner() {
   return (
@@ -95,6 +96,9 @@ function Partner() {
 
             </div>
 
+        </div>
+
+        <div className="partner-background-img">
         </div>
 
     </section>

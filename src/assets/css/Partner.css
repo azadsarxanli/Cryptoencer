@@ -1,16 +1,14 @@
 .partner-wrapper{
-    background-image: url('../img/Titik-titik2.png');
-    background-size: contain;
-    background-position: top right;
-    background-repeat: no-repeat;
     position: relative;
     z-index: 15;
     width: 75%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 50px;
     /* margin-top: 40px !important; */
 }
+
 
 .partner-heading h3{
     font-family: 'Integral';
@@ -20,6 +18,16 @@
     line-height: 43px;
     text-align: center;
     color: #FFFFFF;
+}
+
+.partner-background-img{
+    background-image: url('../img/Titik-titik2.png');
+    width: 681px;
+    height: 681px;
+    background-size: contain;
+    position: absolute;
+    top: 10%;
+    right: -30%;
 }
 
 .partner-container{
