@@ -42,7 +42,7 @@
     top: 25px;
     left: 5%;
     z-index: -1;
-    animation: mercury-group 20s linear infinite;
+    animation: illustration1 10s linear infinite;
 }
 
 .illustration1 img{
@@ -56,7 +56,7 @@
     top: 18%;
     right: 15%;
     z-index: -1;
-    animation: mercury 18s linear infinite;
+    animation: mercury 20s linear infinite;
 }
 
 .illustration2 img{
@@ -223,6 +223,33 @@
     left: -45%;
 }
 
+@keyframes mercury{
+    0% {
+      transform: rotateZ(0deg);
+    }
+    100% {
+      transform: rotateZ(360deg);
+    }
+}
+
+@keyframes illustration1 {
+    0% {
+        opacity: 1.0;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 1.0;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
 /* @keyframes mercury-group {
     0% {
       transform: rotateZ(0deg);
@@ -237,15 +264,6 @@
     }
 } */
 /* 
-@keyframes mercury{
-    0% {
-      transform: rotateZ(0deg);
-    }
-    100% {
-      transform: rotateZ(360deg);
-    }
-    
-} */
 
 /* @keyframes youtube{
     0% {

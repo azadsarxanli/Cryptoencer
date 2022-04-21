@@ -73,7 +73,19 @@ header {
     position: absolute;
     top: 50%;  
     left: 50%; 
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -55%);
+}
+
+.disco-ball-image{
+    animation-name: rotate;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
 }
 
 .disco-ball img{
