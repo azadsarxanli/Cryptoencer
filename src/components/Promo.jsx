@@ -3,7 +3,7 @@ import '../assets/css/Promo.css'
 import promobg from '../assets/img/promo.png'
 import promobg2 from '../assets/img/promo2png.png'
 
-function Promo() {
+const Promo = () => {
   return (
     <section className='wrapper promo-wrapper'>
       <div className="section-heading">

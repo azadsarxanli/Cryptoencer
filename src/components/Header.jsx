@@ -3,7 +3,7 @@ import '../assets/css/Header.css'
 import Logo from '../assets/img/logo.png'
 import DiscoBall from '../assets/img/disco-ball.png'
 
-function Header() {
+const Header = () => {
   return (
     <div className='wrapper header-wrapper'>
         <header>

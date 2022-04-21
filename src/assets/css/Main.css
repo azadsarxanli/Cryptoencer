@@ -150,7 +150,6 @@
 }
 
 
-
 .social-circle-youtube-img{
     position: absolute;
     top: 0;  
@@ -225,10 +224,10 @@
 
 @keyframes mercury{
     0% {
-      transform: rotateZ(0deg);
+        transform: rotateZ(0deg);
     }
     100% {
-      transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
     }
 }
 
@@ -237,66 +236,68 @@
         opacity: 1.0;
     }
     25%{
-        opacity: 0.5;
+        opacity: 0.4;
     }
     50% {
         opacity: 1.0;
     }
     75% {
-        opacity: 0.5;
+        opacity: 0.4;
     }
     100% {
         opacity: 1.0;
     }
 }
 
-/* @keyframes mercury-group {
-    0% {
-      transform: rotateZ(0deg);
-    }
+.pulse {
+    animation: pulse 1s infinite ease-in-out alternate;
+  }
 
-    50%{
-        transform: rotateZ(-20deg);
-    }
+  @keyframes pulse {
+    from { transform: translate(-74%, -135%) scale(0.8); }
+    to { transform: translate(-74%, -135%) scale(1.2); }
+  }
+
+  .hithere {
+    animation: hithere 2s ease infinite;
+  }
+
+  @keyframes hithere {
+    30% { transform: translate(-10%, 35%) scale(1.2); }
+    40%, 60% { transform: translate(-10%, 35%) rotate(-20deg) scale(1.2); }
+    50% { transform: translate(-10%, 35%) rotate(20deg) scale(1.2); }
+    70% { transform: translate(-10%, 35%) rotate(0deg) scale(1.2); }
+    100% { transform: translate(-10%, 35%) scale(1); }
+  }
+
+  .gelatine {
+    animation: gelatine 1s infinite;
+  }
+  @keyframes gelatine {
+    from, to { transform: translate(0%, 20%) scale(1, 1); }
+    25% { transform: translate(0%, 20%) scale(0.9, 1.1); }
+    50% { transform: translate(0%, 20%) scale(1.1, 0.9); }
+    75% { transform: translate(0%, 20%) scale(0.95, 1.05); }
+  }
+
+
+
+  .elastic-spin {
+    animation: elastic-spin 2s infinite ease;
+  }
+  @keyframes elastic-spin {
+    from { transform: translate(-30%, -107%) rotate(0deg); }
+    to { transform: translate(-30%, -107%) rotate(720deg); }
+  }
   
-    100% {
-      transform: rotateZ(20deg);
-    }
-} */
-/* 
 
-/* @keyframes youtube{
-    0% {
-        transform: translate(-65%, -95%) rotateZ(0deg);
-    }
-    100% {
-        transform: translate(-65%, -95%) rotateZ(360deg);
-    }
-}
 
-@keyframes facebook{
-    0% {
-        transform: rotateZ(0deg);
-    }
-    100% {
-        transform: rotateZ(360deg);
-    }
-}
 
-@keyframes instagram{
-    0% {
-        transform: translate(-25%, -62%) rotateZ(0deg);
-    }
-    100% {
-        transform: translate(-25%, -62%) rotateZ(360deg);
-    }
-}
-
-@keyframes telegram{
-    0% {
-        transform: translate(-100%, 40%) rotateZ(0deg);
-    }
-    100% {
-        transform: translate(-100%, 40%) rotateZ(360deg);
-    }
-} */
+  .bounce2 {
+    animation: bounce2 1.5s ease infinite;
+  }
+  @keyframes bounce2 {
+      0%, 20%, 50%, 80%, 100% {transform: translate(-15%, 10%) translateY(0);}
+      40% {transform: translate(-15%, 10%) translateY(-30px);}
+      60% {transform: translate(-15%, 10%) translateY(-15px);}
+  }

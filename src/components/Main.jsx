@@ -14,7 +14,7 @@ import bg1 from '../assets/img/Titik-titik.png'
 import shadow from '../assets/img/lightshadow.png'
 
 
-function Main() {
+const Main = () => {
   return (
     <div className='wrapper wrapper-main'>
         <main className='main-wrapper'>
@@ -51,11 +51,11 @@ function Main() {
                 
                 <div className="social-circle-icons">
                     <img className='social-circle-facebook-img social-circle-icon' src={facebook} alt="facebook" />
-                    <img className='social-circle-youtube-img social-circle-icon' src={youtube} alt="youtube" />
-                    <img className='social-circle-instagram-img social-circle-icon' src={instagram} alt="instagram" />
-                    <img className='social-circle-telegram-img social-circle-icon' src={telegram} alt="telegram" />
-                    <img className='social-circle-twitter-img social-circle-icon' src={twitter} alt="twitter" />
-                    <img className='social-circle-tiktok-img social-circle-icon' src={tiktok} alt="tiktok" />
+                    <img className='social-circle-youtube-img social-circle-icon pulse' src={youtube} alt="youtube" />
+                    <img className='social-circle-instagram-img social-circle-icon elastic-spin' src={instagram} alt="instagram" />
+                    <img className='social-circle-telegram-img social-circle-icon gelatine' src={telegram} alt="telegram" />
+                    <img className='social-circle-twitter-img social-circle-icon hithere' src={twitter} alt="twitter" />
+                    <img className='social-circle-tiktok-img social-circle-icon bounce2' src={tiktok} alt="tiktok" />
                 </div>
 
             </div>

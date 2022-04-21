@@ -8,7 +8,7 @@ import bg4 from '../assets/img/table/4.png'
 import bg5 from '../assets/img/table/5.png'
 import bg6 from '../assets/img/table/6.png'
 
-function TableMain() {
+const TableMain = () => {
   return (
     <div className="table-main">
             <img className="table-main-bg-1" src={bg1} alt="" />

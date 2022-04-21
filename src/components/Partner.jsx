@@ -8,7 +8,7 @@ import elliot from '../assets/img/elliot.png'
 import travlado from '../assets/img/travlado.png'
 import lightshadow from '../assets/img/lightshadow.png'
 
-function Partner() {
+const Partner = () => {
   return (
     <section className='wrapper partner-wrapper'>
 
