@@ -4,6 +4,7 @@ import { Fragment } from 'react';
 import Main from './components/Main';
 import Partner from './components/Partner';
 import Table from './components/Table';
+import Promo from './components/Promo';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
       <Partner/>
 
       <Table/>
+
+      <Promo/>
 
     </Fragment>
   );

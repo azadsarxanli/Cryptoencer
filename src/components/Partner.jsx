@@ -14,7 +14,7 @@ function Partner() {
     <section className='wrapper partner-wrapper'>
 
         <div className="partner-heading">
-            <h3>TOP PARTNERS 😎</h3>
+            <h3>TOP PARTNERS</h3>
         </div>
 
         <div className='partner-first-shadow'>
