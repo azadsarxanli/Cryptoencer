@@ -19,7 +19,6 @@ body {
 }
 
 img{
-  user-drag: none;  
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -36,7 +35,6 @@ img{
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
 }
-
 
 #root{
   max-width: 1920px;
@@ -63,6 +61,16 @@ img{
 .wrapper{
   max-width: 1920px;
   margin: 0 auto;
+}
+
+.section-heading h3 {
+  font-family: 'Integral';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 @media screen and (min-width:1024px) and (max-width: 1440px) {

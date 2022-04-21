@@ -9,17 +9,6 @@
     /* margin-top: 40px !important; */
 }
 
-
-.partner-heading h3{
-    font-family: 'Integral';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
 .partner-background-img{
     background-image: url('../img/Titik-titik2.png');
     width: 681px;

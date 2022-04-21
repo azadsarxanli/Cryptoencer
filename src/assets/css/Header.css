@@ -27,7 +27,8 @@ header {
 
 .logo img{
     cursor: pointer;
-    width: 100%;
+    width: 99px;
+    height: 58px;
 }
 
 .logo p{

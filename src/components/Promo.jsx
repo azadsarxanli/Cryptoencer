@@ -6,7 +6,7 @@ import promobg2 from '../assets/img/promo2png.png'
 function Promo() {
   return (
     <section className='wrapper promo-wrapper'>
-      <div className="promo-heading">
+      <div className="section-heading">
         <h3>BOOK A PROMO</h3>
       </div>
 

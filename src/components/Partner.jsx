@@ -7,13 +7,12 @@ import caesar from '../assets/img/caesar.png'
 import elliot from '../assets/img/elliot.png'
 import travlado from '../assets/img/travlado.png'
 import lightshadow from '../assets/img/lightshadow.png'
-import tiktik2 from '../assets/img/Titik-titik2.png'
 
 function Partner() {
   return (
     <section className='wrapper partner-wrapper'>
 
-        <div className="partner-heading">
+        <div className="section-heading">
             <h3>TOP PARTNERS</h3>
         </div>
 

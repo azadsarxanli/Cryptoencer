@@ -12,16 +12,6 @@
     margin-bottom: 60px;
 }
 
-.promo-heading h3{
-    font-family: 'Integral';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 43px;
-    text-align: center;
-    color: #FFFFFF;
-}
-
 .promo-container{
     width: 100%;
     display: flex;

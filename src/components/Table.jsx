@@ -23,7 +23,7 @@ function Table() {
 
     return (
     <section className='wrapper table-wrapper'>
-        <div className="table-heading">
+        <div className="section-heading">
             <h3>Our influencers</h3>
         </div>
 
