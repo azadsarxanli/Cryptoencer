@@ -264,6 +264,7 @@ const Table = () => {
                     onChange={handleChange}
                     valueLabelDisplay="auto"
                     getAriaValueText={valuetext}
+                    
                 />
                 </div>
             </div>
