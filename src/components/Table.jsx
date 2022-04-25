@@ -39,11 +39,12 @@ const Table = () => {
     const [value, setValue] = useState([8, 72]);
 
     const handleChange = (newValue) => {
-        setValue(newValue);
+        console.log(value[0]);
+        setValue(newValue.target.value);
     };
 
     const valuetext = (value) => {
-        return `${value}°C`;
+        return value;
     }
 
     const openPlatform = () => {
@@ -59,6 +60,10 @@ const Table = () => {
             setToggle(true)
         }
         
+    }
+
+    const value1 = (e) =>{
+
     }
 
     return (
@@ -243,13 +248,12 @@ const Table = () => {
             <div className="table-range">
                 <div className="table-range-container">
                     <div className="table-range-first">
-                        <input type="phone" defaultValue="8000"/>
+                        <input type="phone" value={value[0] + '000'} min={1}/>
                     </div>
                     
                     <p className='table-range-to'>To</p>
-
                     <div className="table-range-second">
-                        <input type="phone" defaultValue="720000"/>
+                        <input type="phone" value={value[1] + '000'} max={99}/>
                     </div>
                 </div>
 
@@ -268,7 +272,7 @@ const Table = () => {
         <TableMain/>
 
     </section>
-  )
+    )
 }
 
 export default Table
