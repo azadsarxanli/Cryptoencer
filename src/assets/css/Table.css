@@ -242,6 +242,14 @@
     padding: 6px 40px !important
 }
 
+.MuiInputLabel-root,
+.MuiInputLabel-formControl,
+.MuiInputLabel-animated,
+.css-p0rm37,
+#demo-simple-select-label{
+    color: white !important;
+}
+
 .table-platform-container{
     display: flex;
     align-items: center;
