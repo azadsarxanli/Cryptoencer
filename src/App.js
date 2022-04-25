@@ -5,6 +5,7 @@ import Main from './components/Main';
 import Partner from './components/Partner';
 import Table from './components/Table';
 import Promo from './components/Promo';
+import Book from './components/Book';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <Main/>
 
       <Partner/>
+
+      <Book/>
 
       <Table/>
 

@@ -249,7 +249,7 @@
     }
 }
 
-.pulse {
+/* .pulse {
     animation: pulse 1s infinite ease-in-out alternate;
   }
 
@@ -300,4 +300,4 @@
       0%, 20%, 50%, 80%, 100% {transform: translate(-15%, 10%) translateY(0);}
       40% {transform: translate(-15%, 10%) translateY(-30px);}
       60% {transform: translate(-15%, 10%) translateY(-15px);}
-  }
+  } */

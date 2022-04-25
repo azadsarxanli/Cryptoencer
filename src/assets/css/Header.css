@@ -54,17 +54,51 @@ header {
 .header-menu ul{
     display: flex;
     list-style-type: none;
+    cursor: pointer;
 }
 
 .header-menu ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    margin-left: 40px;
+    width: 170px;
+    height: 60px;
+    background: #FFFFFF;
+    border-radius: 34px;
+    margin-left: 10px;
+}
+
+.header-menu ul li:nth-child(2){
+    background: #0F103F;
+    box-shadow: -8px 4px 29px rgba(0, 0, 0, 0.44);
+    border-radius: 34px;
+}
+
+.header-menu ul li:nth-child(2) p{
     font-family: 'Gilroy';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 22px;
+    line-height: 139.7%;
+    /* identical to box height, or 31px */
+    
+    text-align: center;
+    
     color: #FFFFFF;
+    
+}
+
+.header-menu ul li p{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 139.7%;
+    text-align: center;
+    color: #0F103F;
+    padding-left: 15px;
+    cursor: pointer;
 }
 
 .disco-ball{

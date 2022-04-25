@@ -3,12 +3,12 @@
     z-index: 15;
     width: 90%;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: -70px;
 }
 
 .table-tools{
     margin: 0 7.5%;
-    margin-top: 180px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
 }
@@ -99,6 +99,9 @@
 }
 
 .table-platform-dropdown{
+    transition: 0.4s;
+    visibility: hidden;
+    opacity: 0;
     width: 253px;
     padding: 12px;
     background: #1B1C53;
@@ -168,7 +171,7 @@
     font-size: 16.3333px;
     line-height: 19px;
     color: #FFFFFF;
-    margin: 0 5px 0 16px;
+    margin: 0 35px 0 16px;
 }
 
 .table-range-container{
@@ -237,4 +240,29 @@
 
 .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root{
     padding: 6px 40px !important
+}
+
+.table-platform-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.platform-text{
+    cursor: pointer;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.3333px;
+    line-height: 19px;
+    color: #BDBDBD;
+    margin-right: 133px;
+}
+
+.bottom-arrow{
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
