@@ -110,3 +110,34 @@
     color: #FFFFFF;
     margin-top: 20px;
 }
+
+@media screen and (min-width: 280px) and (max-width:1024px) {
+    .partner-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: -30%;
+    }
+
+    .partner-first-shadow{
+        display: none;
+    }
+
+    .partner-background-img{
+        display: none;
+    }
+
+    .partner-container{
+        flex-direction: column;
+    }
+
+    .section-heading h3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+
+    .partner-second{
+        margin: 30px 0;
+    }
+}

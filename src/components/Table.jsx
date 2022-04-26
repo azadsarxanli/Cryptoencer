@@ -44,7 +44,7 @@ const Table = () => {
     };
 
     const valuetext = (value) => {
-        return value;
+        return value + '000';
     }
 
     const openPlatform = () => {
@@ -60,10 +60,6 @@ const Table = () => {
             setToggle(true)
         }
         
-    }
-
-    const value1 = (e) =>{
-
     }
 
     return (

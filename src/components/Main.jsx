@@ -26,9 +26,15 @@ const Main = () => {
             <div className="main-heading">
                 <h1>Cryptoencer</h1>
 
+                {window.innerWidth > 1024 ? 
                 <p>
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,<br/> sed diam nonummy nibh euismod tincidunt ut laoreet <br/> dolore magna aliquam erat volutpat. Ut wisi enim ad
                 </p>
+                :
+                <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
+                </p>
+                }
             </div>
 
             <div className="illustration2">

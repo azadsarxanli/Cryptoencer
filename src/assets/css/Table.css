@@ -274,3 +274,9 @@
     justify-content: center;
     cursor: pointer;
 }
+
+@media screen and (min-width: 280px) and (max-width:1024px) {
+    .table-wrapper{
+        display: none;
+    }
+}

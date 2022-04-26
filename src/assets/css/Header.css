@@ -111,10 +111,10 @@ header {
 }
 
 .disco-ball-image{
-    animation-name: rotate;
+    /* animation-name: rotate;
     animation-duration: 50s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: linear; */
 }
 
 @keyframes rotate{
@@ -125,4 +125,50 @@ header {
 .disco-ball img{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (min-width:280px) and (max-width:1024px) {
+    .logo{
+        display: none;
+    }
+
+    .disco-ball{
+        width: 130%;
+        height: unset;
+        transform: translate(-50%, -60%);
+    }
+
+    .header-menu ul li{
+        width: 135px;
+        height: 55px;
+    }
+
+    .header-menu ul li p{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 139.7%;
+        text-align: center;
+        color: #0F103F;
+    }
+
+    .header-menu ul li:nth-child(2){
+        background-color: white;
+    }
+    
+    .header-menu ul li:nth-child(2) p{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 139.7%;
+        text-align: center;      
+        color: #0F103F;
+    }
+
+    .header-menu ul li svg{
+        width: 15px;
+        height: 15px;
+    }
+
+    .header-menu ul li svg path{
+        fill: #0F103F;
+    }
 }

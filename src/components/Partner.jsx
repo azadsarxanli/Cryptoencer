@@ -42,7 +42,12 @@ const Partner = () => {
 
                 <div className="partner-first-desc">
                     <h4>CaesarsCalls</h4>
+                    {window.innerWidth > 1024 
+                    ?
                     <p>Lorem ipsum dolor sit amet, consectetuer<br/> adipiscing elit, sed diam nonummy nibh<br/> euismod tincidunt ut laoreet </p>
+                    :
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+                    }
                 </div>
 
             </div>
@@ -65,7 +70,12 @@ const Partner = () => {
 
                 <div className="partner-second-desc">
                     <h4>EllioTrades Crypto </h4>
+                    {window.innerWidth > 1024 
+                    ?
                     <p>Lorem ipsum dolor sit amet, consectetuer<br/> adipiscing elit, sed diam nonummy nibh<br/> euismod tincidunt ut laoreet </p>
+                    :
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+                    }
                 </div>
 
             </div>
@@ -90,7 +100,12 @@ const Partner = () => {
 
                 <div className="partner-third-desc">
                     <h4>Travladd Crypto</h4>
+                    {window.innerWidth > 1024 
+                    ?
                     <p>Lorem ipsum dolor sit amet, consectetuer<br/> adipiscing elit, sed diam nonummy nibh<br/> euismod tincidunt ut laoreet </p>
+                    :
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet </p>
+                    }
                 </div>
 
             </div>

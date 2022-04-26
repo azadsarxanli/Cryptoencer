@@ -56,7 +56,7 @@
     top: 18%;
     right: 15%;
     z-index: -1;
-    animation: mercury 20s linear infinite;
+    /* animation: mercury 20s linear infinite; */
 }
 
 .illustration2 img{
@@ -145,9 +145,9 @@
     transition: 0.2s;
 }
 
-.social-circle-facebook-img:hover{
+/* .social-circle-facebook-img:hover{
     transform: translate(-5%, -100%) scale(1.1);
-}
+} */
 
 
 .social-circle-youtube-img{
@@ -158,9 +158,9 @@
     transition: 0.2s;
 }
 
-.social-circle-youtube-img:hover{
+/* .social-circle-youtube-img:hover{
     transform: translate(-74%, -135%) scale(1.1);
-}
+} */
 
 
 .social-circle-instagram-img{
@@ -171,9 +171,9 @@
     transition: 0.2s;
 }
 
-.social-circle-instagram-img:hover{
+/* .social-circle-instagram-img:hover{
     transform: translate(-30%, -107%) scale(1.1);
-}
+} */
 
 
 .social-circle-telegram-img{
@@ -184,9 +184,9 @@
     transition: 0.2s;
 }
 
-.social-circle-telegram-img:hover{
+/* .social-circle-telegram-img:hover{
     transform: translate(0%, 20%) scale(1.1);
-}
+} */
 
 
 .social-circle-twitter-img{
@@ -198,9 +198,9 @@
 }
 
 
-.social-circle-twitter-img:hover{
+/* .social-circle-twitter-img:hover{
     transform: translate(-10%, 35%) scale(1.1);
-}
+} */
 
 
 .social-circle-tiktok-img{
@@ -211,9 +211,9 @@
     transition: 0.2s;
 }
 
-.social-circle-tiktok-img:hover{
+/* .social-circle-tiktok-img:hover{
     transform: translate(-15%, 10%) scale(1.1);
-}
+} */
     
 
 .social-circle-bg-img{
@@ -249,55 +249,92 @@
     }
 }
 
-/* .pulse {
-    animation: pulse 1s infinite ease-in-out alternate;
-  }
+@media screen and (min-width: 280px) and (max-width:1024px) {
+    .main-wrapper{
+        width: 100%;
+        margin-top: 90px !important;
+    }
 
-  @keyframes pulse {
-    from { transform: translate(-74%, -135%) scale(0.8); }
-    to { transform: translate(-74%, -135%) scale(1.2); }
-  }
+    .main-heading h1{
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+    }
 
-  .hithere {
-    animation: hithere 2s ease infinite;
-  }
+    .main-heading p{
+        width: 98%;
+    }
 
-  @keyframes hithere {
-    30% { transform: translate(-10%, 35%) scale(1.2); }
-    40%, 60% { transform: translate(-10%, 35%) rotate(-20deg) scale(1.2); }
-    50% { transform: translate(-10%, 35%) rotate(20deg) scale(1.2); }
-    70% { transform: translate(-10%, 35%) rotate(0deg) scale(1.2); }
-    100% { transform: translate(-10%, 35%) scale(1); }
-  }
+    .illustration1{
+        top: 35px;
+        left: -15%;
+    }
 
-  .gelatine {
-    animation: gelatine 1s infinite;
-  }
-  @keyframes gelatine {
-    from, to { transform: translate(0%, 20%) scale(1, 1); }
-    25% { transform: translate(0%, 20%) scale(0.9, 1.1); }
-    50% { transform: translate(0%, 20%) scale(1.1, 0.9); }
-    75% { transform: translate(0%, 20%) scale(0.95, 1.05); }
-  }
+    .illustration2{
+        right: -5%;
+        top: 20%;
+    }
 
+    .social-circle,
+    .social-gradient{
+        margin-top: 200px;
+        /* display: none; */
+    }
 
+    .social-circle-bg-img{
+        top: 200px;
+        left: 40%;
+    }
 
-  .elastic-spin {
-    animation: elastic-spin 2s infinite ease;
-  }
-  @keyframes elastic-spin {
-    from { transform: translate(-30%, -107%) rotate(0deg); }
-    to { transform: translate(-30%, -107%) rotate(720deg); }
-  }
-  
+    .social-shadow-img{
+        transform: translate(-45.5%, -65%);
+        filter: blur(0);
+    }
 
+    .social-circle-img{
+        width: 160%;
+        transform: translate(-52.5%, -80%);
+    }
 
+    .social-circle-icon{
+        width: 105px;
+        height: 105px;
+    }
 
-  .bounce2 {
-    animation: bounce2 1.5s ease infinite;
-  }
-  @keyframes bounce2 {
-      0%, 20%, 50%, 80%, 100% {transform: translate(-15%, 10%) translateY(0);}
-      40% {transform: translate(-15%, 10%) translateY(-30px);}
-      60% {transform: translate(-15%, 10%) translateY(-15px);}
-  } */
+    .social-circle-text{
+        transform: translate(-50%, -220%);
+    }
+
+    .social-circle-text h3 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 26px;
+        text-align: center;        
+    }
+
+    .social-circle-facebook-img{
+        transform: translate(-50%, -200%);
+    }
+
+    .social-circle-youtube-img{
+        transform: translate(-55%, -235%);
+    }
+
+    .social-circle-instagram-img{
+        transform: translate(25%, -200%);
+    }
+
+    .social-circle-telegram-img{
+        left: -15%;
+        transform: translate(0%, -90%);
+    }
+
+    .social-circle-twitter-img{
+        left: 30%;
+        transform: translate(0%, -45%);
+    }
+
+    .social-circle-tiktok-img{
+        transform: translate(45%, -70%);
+    }
+}
