@@ -80,6 +80,44 @@
 
 @media screen and (min-width: 280px) and (max-width:1024px) {
     .promo-wrapper{
-        display: none;
+        margin-bottom: 50%;
+    }
+
+    .promo-container{
+        flex-direction: column;
+    }
+
+    .promo-img{
+        order: -1;
+        margin-top: 40px;
+    }
+
+    .promo-absolute-img{
+        width: 80%;
+        right: -10%;
+    }
+
+    .promo-text p{
+        margin-top: 40px;
+        width: 100%;
+        font-weight: 500 !important;
+        font-size: 16px !important;
+        line-height: 139.7%;
+    }
+
+    .promo-button{
+        transform: translateY(-20px);
+    }
+
+    .promo-img img:nth-child(1){
+        width: 100%;
+    }
+
+    .promo-button svg{
+        width: 380px !important;
+    }
+
+    .promo-button p{
+        left: 105px;
     }
 }

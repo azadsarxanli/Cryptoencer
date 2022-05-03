@@ -81,3 +81,30 @@ thead th:nth-child(5){
 tbody{
     border: 1px solid rgba(0, 0, 0, 0.04);
 }
+
+@media screen and (min-width: 280px) and (max-width: 1024px) {
+    .table-main{
+        margin-top: 40%;
+    }
+
+    table thead{
+        height: 66px;
+    }
+
+    table thead th{
+        font-weight: 600;
+        font-size: 14px !important;
+        line-height: 139.7%;
+        text-align: center;
+    }
+
+    thead th:nth-child(2) {
+        border-top-right-radius: 30px;
+    }
+
+    thead th:nth-child(3),
+    thead th:nth-child(4),
+    thead th:nth-child(5){
+        display: none;
+    }
+}

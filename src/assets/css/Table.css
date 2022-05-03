@@ -277,6 +277,35 @@
 
 @media screen and (min-width: 280px) and (max-width:1024px) {
     .table-wrapper{
+        width: 95%;
+        margin-top: 180px;
+    }
+    
+    .table-tools{
+        margin: 40px 20px;
+    }
+
+    .table-volume-select{
+        padding: 13px 18px;
+        max-width: 100px;
+    }
+
+    .table-platform-select{
+        /* width: 224px; */
+    }
+
+    .platform-text{
+        margin-right: 150px;
+    }
+
+    .table-range-text{
         display: none;
+    }
+
+    .table-range{
+        position: absolute;
+        top: 5%;  
+        left: 50%; 
+        transform: translate(-50%, 20%);
     }
 }
