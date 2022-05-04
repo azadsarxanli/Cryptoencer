@@ -1,0 +1,115 @@
+.page-navigation {
+  max-width: 421px;
+  margin-top: 47px;
+}
+
+.page-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 300px;
+  list-style-type: none;
+}
+
+.page-item {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  background: #1B1C53;
+  border-radius: 17px;
+  margin-right: 8px;
+}
+
+.page-item-link {
+  display: table-cell;
+  color: #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.active {
+  color: blue;
+  text-decoration: none;
+}
+
+.page-item-backward{
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  background: #373C51;
+  justify-content: center;
+  color: white;
+  border-radius: 17px;
+  margin-right: 20px;
+}
+
+.page-item-forward{
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  background: #373C51;
+  justify-content: center;
+  color: white;
+  border-radius: 17px;
+  margin-left: 12px;
+}
+
+@media screen and (min-width: 280px) and (max-width: 370px) {
+  .page-navigation {
+    margin-top: 86px;
+    padding: 0 25px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page-list {
+    max-width: inherit;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+  .page-navigation {
+    margin-top: 86px;
+    padding: 0 25px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page-list {
+    max-width: inherit;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 768px) {
+  .page-navigation {
+    margin-top: 86px;
+    padding: 0 25px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page-list {
+    max-width: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .page-navigation {
+    margin-top: 86px;
+    padding: 0 25px;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .page-list {
+    max-width: inherit;
+  }
+}

@@ -3,36 +3,42 @@
 }
 
 .table-main-bg-1{
+    z-index: -10;
     position: absolute;
     top: 5%;
     left: -10%;
 }
 
 .table-main-bg-2{
+    z-index: -10;
     position: absolute;
     top: 20%;
     right: -10%;
 }
 
 .table-main-bg-3{
+    z-index: -10;
     position: absolute;
     top: 30%;
     left: -17%;
 }
 
 .table-main-bg-4{
+    z-index: -10;
     position: absolute;
     top: 40%;
     right: -10%;
 }
 
 .table-main-bg-5{
+    z-index: -10;
     position: absolute;
     top: 78%;
     left: -17%;
 }
 
 .table-main-bg-6{
+    z-index: -10;
     position: absolute;
     bottom: -12%;
     right: -5%;
@@ -66,11 +72,19 @@ table thead tr th{
 }
 
 thead th:nth-child(1){
-    width: 35%;
+    width: 25%;
     border-top-left-radius: 30px;
 }
 
 thead th:nth-child(2){
+    width: 30%;
+}
+
+thead th:nth-child(3){
+    width: 15%;
+}
+
+thead th:nth-child(4){
     width: 25%;
 }
 
@@ -79,7 +93,73 @@ thead th:nth-child(5){
 }
 
 tbody{
+    padding: 50px;
     border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+tbody tr{
+    text-align: center;
+    vertical-align: top;
+}
+
+tbody tr td{
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 139.7%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+tbody tr td{
+    padding: 40px 20px;
+}
+
+tbody tr td:nth-child(3),
+tbody tr td:nth-child(4),
+tbody tr td:nth-child(5){
+    padding-top: 60px;
+}
+
+tbody tr td:nth-child(1){
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+tbody tr td:nth-child(1) p{
+    margin-left: 75px;
+}
+
+.table-avatar{
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.table-avatar img{
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* tbody tr td:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} */
+
+.table-socials-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-socials-container div{
+    margin: 0 10px;
 }
 
 @media screen and (min-width: 280px) and (max-width: 1024px) {

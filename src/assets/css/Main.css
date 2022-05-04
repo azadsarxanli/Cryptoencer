@@ -143,6 +143,10 @@
     left: 0; 
     transform: translate(-5%, -100%);
     transition: 0.2s;
+    animation: 
+    animXfacebook 2s  cubic-bezier(0.36, 0, 0.64, 1) -12s infinite alternate,
+    animYfacebook 2s cubic-bezier(0.36, 0, 0.64, 1) -11s infinite alternate,
+    scaleFacebook 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
 }
 
 /* .social-circle-facebook-img:hover{
@@ -156,6 +160,10 @@
     left: 50%; 
     transform: translate(-74%, -135%);
     transition: 0.2s;
+    animation: 
+    animXyoutube 2s  cubic-bezier(0.36, 0, 0.64, 1) -11s infinite alternate,
+    animYyoutube 2s cubic-bezier(0.36, 0, 0.64, 1) -10s infinite alternate,
+    scaleYoutube 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
 }
 
 /* .social-circle-youtube-img:hover{
@@ -169,6 +177,10 @@
     right: 0%; 
     transform: translate(-30%, -107%);
     transition: 0.2s;
+    animation: 
+    animXinsta 2s  cubic-bezier(0.36, 0, 0.64, 1) -9s infinite alternate,
+    animYinsta 2s cubic-bezier(0.36, 0, 0.64, 1) -8s infinite alternate,
+    scaleInsta 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
 }
 
 /* .social-circle-instagram-img:hover{
@@ -182,6 +194,10 @@
     left: 5%; 
     transform: translate(0%, 20%);
     transition: 0.2s;
+    /* animation: 
+    animXtelegram 2s  cubic-bezier(0.36, 0, 0.64, 1) -7s infinite alternate,
+    animYtelegram 2s cubic-bezier(0.36, 0, 0.64, 1) -6s infinite alternate,
+    scaleTele 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate; */
 }
 
 /* .social-circle-telegram-img:hover{
@@ -195,6 +211,10 @@
     left: 40%; 
     transform: translate(-10%, 35%);
     transition: 0.2s;
+    animation: 
+    animXtwit 2s  cubic-bezier(0.36, 0, 0.64, 1) -5s infinite alternate,
+    animYtwit 2s cubic-bezier(0.36, 0, 0.64, 1) -4s infinite alternate,
+    scaleTwit 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate;
 }
 
 
@@ -209,6 +229,10 @@
     right: 0%; 
     transform: translate(-15%, 10%);
     transition: 0.2s;
+    /* animation: 
+    animXtiktok 2s  cubic-bezier(0.36, 0, 0.64, 1) -3s infinite alternate,
+    animYtiktok 2s cubic-bezier(0.36, 0, 0.64, 1) -2s infinite alternate,
+    scaleTiktok 4s cubic-bezier(0.36, 0, 0.64, 1) 0s infinite alternate; */
 }
 
 /* .social-circle-tiktok-img:hover{
@@ -247,6 +271,153 @@
     100% {
         opacity: 1.0;
     }
+}
+
+
+@keyframes animXyoutube{
+    0% {left: 10%;}
+    100% {left: 90%;}
+}
+
+@keyframes animYyoutube{
+    0% {top: 0px;}
+    100% {top: 350px;}
+}
+
+
+
+@keyframes animXfacebook{
+    0% {left: -5%;}
+    100% {left: 80%;}
+}
+
+@keyframes animYfacebook{
+    0% {top: -50px;}
+    100% {top: 300px;}
+}
+
+
+
+@keyframes animXinsta{
+    0% {left: 0%;}
+    100% {left: 80%;}
+}
+
+@keyframes animYinsta{
+    0% {top: -25px;}
+    100% {top: 300px;}
+}
+
+
+@keyframes animXtelegram{
+    0% {left: -5%;}
+    100% {left: 75%;}
+}
+
+@keyframes animYtelegram{
+    0% {top: -300px;}
+    100% {top: 50px;}
+}
+
+
+@keyframes animXtwit{
+    0% {left: -5%;}
+    100% {left: 75%;}
+}
+
+@keyframes animYtwit{
+    0% {top: -325px;}
+    100% {top: 20px;}
+}
+
+
+@keyframes animXtiktok{
+    0% {left: -5%;}
+    100% {left: 75%;}
+}
+
+@keyframes animYtiktok{
+    0% {top: -300px;}
+    100% {top: 20px;}
+}
+
+
+
+@keyframes scaleTiktok {
+    0%{
+        transform: translate(-15%, 10%) scale(0.6)
+    }
+    50%{
+        transform: translate(-15%, 10%) scale(0.8)
+    }
+    100%{
+        transform: translate(-15%, 10%) scale(0.6)
+    }
+}
+
+
+@keyframes scaleTwit {
+    0%{
+        transform: translate(-10%, 35%) scale(0.7)
+    }
+    50%{
+        transform: translate(-10%, 35%) scale(1)
+    }
+    100%{
+        transform: translate(-10%, 35%) scale(0.7)
+    }
+}
+
+
+@keyframes scaleTele {
+    0%{
+        transform: translate(0%, 20%) scale(0.7)
+    }
+    50%{
+        transform: translate(0%, 20%) scale(1)
+    }
+    100%{
+        transform: translate(0%, 20%) scale(0.7)
+    }
+}
+
+
+@keyframes scaleInsta {
+    0%{
+        transform: translate(-30%, -107%) scale(0.7)
+    }
+    50%{
+        transform: translate(-30%, -107%) scale(1)
+    }
+    100%{
+        transform: translate(-30%, -107%) scale(0.7)
+    }
+}
+
+@keyframes scaleFacebook {
+    0%{
+        transform: translate(-5%, -100%) scale(0.7)
+    }
+    50%{
+        transform: translate(-5%, -100%) scale(1)
+    }
+    100%{
+        transform: translate(-5%, -100%) scale(0.7)
+    }
+}
+
+@keyframes scaleYoutube {
+
+    0%{
+        transform: translate(-74%, -135%) scale(0.7)
+    }
+    50%{
+        transform: translate(-74%, -135%) scale(1)
+    }
+    100%{
+        transform: translate(-74%, -135%) scale(0.7)
+    }
+
 }
 
 @media screen and (min-width: 280px) and (max-width:1024px) {

@@ -1,13 +1,82 @@
-import React,{useState, useRef} from 'react'
+import React,{useState, useRef, useEffect} from 'react'
 import '../assets/css/Table.css'
+import Pagination from '../components/Pagination'
 import { Slider } from '@mui/material'
 import { FormControl } from '@mui/material'
 import { InputLabel } from '@mui/material'
 import { Select } from '@mui/material'
 import { MenuItem } from '@mui/material'
+import humanFormat from 'human-format'
 import TableMain from './TableMain'
 
 const Table = () => {
+    
+
+    const [data, setData] = useState([])
+
+    const fetchApi = () => {
+        return fetch("http://localhost:3001/api/influencer" , {
+        method: 'GET',
+        headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        }
+    })
+    .then((response) => {
+        return response.json();
+    })
+    .then((responseJson) => {
+        return responseJson;
+    })
+    .catch((error) => {
+        console.error(JSON.stringify(error));
+    });
+    }
+
+    useEffect(() => {
+        fetchApi()
+        .then((data) => {
+        setData(data)
+        setDynamicData(data)
+
+        // const highestMaxScore = Math.max(data[0].socials.map(e => e.follower_or_subscriber_count));
+        // console.log(data.map(influencer => influencer.socials.map(e => console.log(e.follower_or_subscriber_count))))
+    })
+    }, [])    
+
+    const [dynamicData, setDynamicData] = useState(data);
+
+    const valueLow = () => {
+        const NewData = data.filter((e) => e.volume === "Low" );
+        setDynamicData(NewData)
+    }
+
+    const valueMedium = () => {
+        const NewData = data.filter((e) => e.volume === "Medium" );
+        setDynamicData(NewData)
+    }
+
+    const valueHigh = () => {
+        const NewData = data.filter((e) => e.volume === "High" );
+        setDynamicData(NewData)
+    }
+
+
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 12;
+
+    const paginate = (number) => {
+        setCurrentPage(number)
+    }
+
+    const indexOfLastItem = currentPage * itemsPerPage;
+    const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+    const items = dynamicData.slice(indexOfFirstItem, indexOfLastItem)
+
+
+
+
+
     const platform = useRef();
     const platformdropdown = useRef();
     const bottomArrow = useRef();
@@ -79,9 +148,9 @@ const Table = () => {
                     label="Volume"
                     // onChange={handleChange}
                 >
-                    <MenuItem value={10}>Low</MenuItem>
-                    <MenuItem value={20}>Medium</MenuItem>
-                    <MenuItem value={30}>High</MenuItem>
+                    <MenuItem onClick={valueLow} value={10}>Low</MenuItem>
+                    <MenuItem onClick={valueMedium} value={20}>Medium</MenuItem>
+                    <MenuItem onClick={valueHigh} value={30}>High</MenuItem>
                 </Select>
             </FormControl>
             </div>
@@ -266,7 +335,11 @@ const Table = () => {
             </div>
         </div>
 
-        <TableMain/>
+        <TableMain data={items} value1={valueLow} check={check}/>
+
+        <div className="table-pagination">
+            <Pagination paginate={paginate} totalItems={dynamicData && dynamicData.length} itemsPerPage={itemsPerPage} currentPage={currentPage} />
+        </div>
 
     </section>
     )
