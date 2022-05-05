@@ -342,3 +342,10 @@
         bottom: 12px;
     }
 }
+
+@media screen and (min-width: 1700px) and (max-width: 2580px) {
+    .table-pagination{
+        margin-top: -15% !important;
+        margin-bottom: 15% !important;
+    }
+}
