@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom';
 import '../assets/css/TableMain.css'
-import { Pagination } from '@mui/material'
 import bg1 from '../assets/img/table/1.png'
 import bg2 from '../assets/img/table/2.png'
 import bg3 from '../assets/img/table/3.png'
@@ -11,6 +11,8 @@ import bg6 from '../assets/img/table/6.png'
 import { Fragment } from 'react'
 
 const TableMain = (props) => {
+
+    // console.log(props.data[0].socials[0].link);
 
 return (
     <div className="table-main">
@@ -46,32 +48,42 @@ return (
                                 <td>
                                     <div className='table-socials-container'>
                                         {e.socials[0] &&
-                                        <div>
-                                            <img src={`/table/${e.socials[0].platform}.png`} alt="" />
-                                            <p>{e.socials[0].follower_or_subscriber_count}</p>
-                                        </div>
+                                            <div>
+                                                <a href={`${e.socials[0].link}`} target="_blank" rel="noopener noreferrer">
+                                                    <img src={`/table/${e.socials[0].platform}.png`} alt="" />
+                                                </a>
+                                                <p>{e.socials[0].follower_or_subscriber_count}</p>
+                                            </div>
                                         }
                                         {e.socials[1] &&
                                         <div>
-                                            <img src={`/table/${e.socials[1].platform}.png`} alt="" />
+                                            <a href={`${e.socials[1].link}`} target="_blank" rel="noopener noreferrer">
+                                                <img src={`/table/${e.socials[1].platform}.png`} alt="" />
+                                            </a>
                                             <p>{e.socials[1].follower_or_subscriber_count}</p>
                                         </div>
                                         }
                                         {e.socials[2] &&
                                         <div>
-                                            <img src={`/table/${e.socials[2].platform}.png`} alt="" />
+                                            <a href={`${e.socials[2].link}`} target="_blank" rel="noopener noreferrer">
+                                                <img src={`/table/${e.socials[2].platform}.png`} alt="" />
+                                            </a>
                                             <p>{e.socials[2].follower_or_subscriber_count}</p>
                                         </div>
                                         }
                                         {e.socials[3] &&
                                         <div>
+                                            <a href={`${e.socials[3].link}`} target="_blank" rel="noopener noreferrer">
                                             <img src={`/table/${e.socials[3].platform}.png`} alt="" />
+                                            </a>
                                             <p>{e.socials[3].follower_or_subscriber_count}</p>
                                         </div>
                                         }
                                         {e.socials[4] &&
                                         <div>
+                                            <a href={`${e.socials[4].link}`} target="_blank" rel="noopener noreferrer">
                                             <img src={`/table/${e.socials[4].platform}.png`} alt="" />
+                                            </a>
                                             <p>{e.socials[4].follower_or_subscriber_count}</p>
                                         </div>
                                         }

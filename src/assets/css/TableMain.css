@@ -1,5 +1,7 @@
 .table-main{
     position: relative;
+    min-height: 666px;
+    max-height: 2361px;
 }
 
 .table-main-bg-1{
@@ -47,7 +49,7 @@
 table{
     margin-top: 30px;
     width: 100%;
-    height: 2361px;
+    min-height: 400px;
     background: rgba(0, 0, 0, 0.04);
     backdrop-filter: blur(105px);
     border-collapse: collapse;
@@ -93,6 +95,7 @@ thead th:nth-child(5){
 }
 
 tbody{
+    vertical-align: top !important;
     padding: 50px;
     border: 1px solid rgba(0, 0, 0, 0.04);
 }
@@ -164,7 +167,7 @@ tbody tr td:nth-child(1) p{
 
 @media screen and (min-width: 280px) and (max-width: 1024px) {
     .table-main{
-        margin-top: 40%;
+        margin-top: 60%;
     }
 
     table thead{
@@ -180,11 +183,44 @@ tbody tr td:nth-child(1) p{
 
     thead th:nth-child(2) {
         border-top-right-radius: 30px;
+        text-align: left;
+        padding-left: 40px;
     }
 
     thead th:nth-child(3),
     thead th:nth-child(4),
     thead th:nth-child(5){
         display: none;
+    }
+
+    tbody tr td{
+        font-size: 16.5px;
+    }
+
+    tbody tr td:nth-child(1) p{
+        margin-left: 20px;
+    }
+
+    tbody tr td:nth-child(3),
+    tbody tr td:nth-child(4),
+    tbody tr td:nth-child(5){
+        display: none;
+    }
+
+    .table-socials-container{
+        margin-top: -5px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .table-avatar{
+        width: 60px;
+        height: 60px;
+    }
+
+    .table-avatar img{
+        width: 60px;
+        height: 60px;
     }
 }

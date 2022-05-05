@@ -7,10 +7,13 @@ import { InputLabel } from '@mui/material'
 import { Select } from '@mui/material'
 import { MenuItem } from '@mui/material'
 import humanFormat from 'human-format'
+import numeral from 'numeral'
 import TableMain from './TableMain'
 
 const Table = () => {
-    
+    let str = "22 M";
+    let strNew = str.replace(/\s/g, '');
+    let strFinal = strNew.toLocaleLowerCase();
 
     const [data, setData] = useState([])
 
@@ -38,13 +41,10 @@ const Table = () => {
         .then((data) => {
         setData(data)
         setDynamicData(data)
-
-        // const highestMaxScore = Math.max(data[0].socials.map(e => e.follower_or_subscriber_count));
-        // console.log(data.map(influencer => influencer.socials.map(e => console.log(e.follower_or_subscriber_count))))
     })
     }, [])    
 
-    const [dynamicData, setDynamicData] = useState(data);
+    let [dynamicData, setDynamicData] = useState(data);
 
     const valueLow = () => {
         const NewData = data.filter((e) => e.volume === "Low" );
@@ -60,6 +60,49 @@ const Table = () => {
         const NewData = data.filter((e) => e.volume === "High" );
         setDynamicData(NewData)
     }
+
+    const rangeValue1 = useRef();
+    const rangeValue2 = useRef();
+
+    const [value, setValue] = useState([8, 72]);
+    // social.follower_or_subscriber_count.toLocaleLowerCase().replace(/\s/g, '')
+    const handleChange = (newValue) => {
+        setValue(newValue.target.value);
+        const range1 = newValue.target.value[0] * 1000;
+        const range2 = newValue.target.value[1] * 10000;
+        console.log(range1, range2)
+        const sumArray = []
+         data.forEach(inf => {
+            const numArr = inf.socials.map(social => numeral(social.follower_or_subscriber_count.toLocaleLowerCase().replace(/\s/g,''))._value )
+            sumArray.push(numArr.reduce((a,b)=> a+b ))
+        })
+        console.log(sumArray)
+        const x = data.filter((influencer, i) => sumArray[i] > range1 && sumArray[i] < range2)
+        console.log(x)
+        setDynamicData(x)
+    }
+
+    const rangeFirst = (e) =>{
+        console.log(value);
+    }
+
+    const rangeSecond = (e) =>{
+        console.log(value);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     const [currentPage, setCurrentPage] = useState(1);
@@ -104,13 +147,6 @@ const Table = () => {
             })
         }
     }
-
-    const [value, setValue] = useState([8, 72]);
-
-    const handleChange = (newValue) => {
-        console.log(value[0]);
-        setValue(newValue.target.value);
-    };
 
     const valuetext = (value) => {
         return value + '000';
@@ -313,12 +349,12 @@ const Table = () => {
             <div className="table-range">
                 <div className="table-range-container">
                     <div className="table-range-first">
-                        <input type="phone" value={value[0] + '000'} min={1}/>
+                        <input ref={rangeValue1} onChange={rangeFirst} type="phone" value={value[0] + '000'} min={1}/>
                     </div>
                     
                     <p className='table-range-to'>To</p>
                     <div className="table-range-second">
-                        <input type="phone" value={value[1] + '000'} max={99}/>
+                        <input ref={rangeValue2} onChange={rangeSecond} type="phone" value={value[1] + '0000'} max={99}/>
                     </div>
                 </div>
 

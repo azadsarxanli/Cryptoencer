@@ -12,7 +12,6 @@
 }
 
 .page-item {
-  cursor: pointer;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -24,6 +23,10 @@
   background: #1B1C53;
   border-radius: 17px;
   margin-right: 8px;
+}
+
+.page-item:focus-within{
+  background-color: white;
 }
 
 .page-item-link {
@@ -73,6 +76,10 @@
   .page-list {
     max-width: inherit;
   }
+
+  .page-item-backward{
+    margin-right: 0;
+  }
 }
 
 @media screen and (min-width: 370px) and (max-width: 414px) {
@@ -80,11 +87,23 @@
     margin-top: 86px;
     padding: 0 25px;
     max-width: 100%;
-    width: 100%;
+    width: 80%;
   }
 
   .page-list {
     max-width: inherit;
+  }
+
+  .page-item-backward{
+    margin-right: 0;
+  }
+
+  .page-item-forward{
+    margin-left: 0;
+  }
+
+  .page-item{
+    margin-right: 0;
   }
 }
 
@@ -93,11 +112,23 @@
     margin-top: 86px;
     padding: 0 25px;
     max-width: 100%;
-    width: 100%;
+    width: 80%;
   }
 
   .page-list {
     max-width: inherit;
+  }
+
+  .page-item-backward{
+    margin-right: 0;
+  }
+
+  .page-item-forward{
+    margin-left: 0;
+  }
+
+  .page-item{
+    margin-right: 0;
   }
 }
 
@@ -106,10 +137,22 @@
     margin-top: 86px;
     padding: 0 25px;
     max-width: 100%;
-    width: 100%;
+    width: 80%;
   }
 
   .page-list {
     max-width: inherit;
+  }
+
+  .page-item-backward{
+    margin-right: 0;
+  }
+
+  .page-item-forward{
+    margin-left: 0;
+  }
+
+  .page-item{
+    margin-right: 0;
   }
 }
