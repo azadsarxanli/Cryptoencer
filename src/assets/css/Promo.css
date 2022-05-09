@@ -121,3 +121,15 @@
         left: 105px;
     }
 }
+
+@media screen and (min-width: 700px) and (max-width: 1024px) {
+    .promo-button{
+        transform: translate(20%, 20%);
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+    .promo-button{
+        margin-top: 20%;
+    }
+}

@@ -6,7 +6,6 @@ import { FormControl } from '@mui/material'
 import { InputLabel } from '@mui/material'
 import { Select } from '@mui/material'
 import { MenuItem } from '@mui/material'
-import humanFormat from 'human-format'
 import numeral from 'numeral'
 import TableMain from './TableMain'
 
@@ -72,9 +71,10 @@ const Table = () => {
         const range2 = newValue.target.value[1] * 10000;
         console.log(range1, range2)
         const sumArray = []
-         data.forEach(inf => {
+        data.forEach(inf => {
             const numArr = inf.socials.map(social => numeral(social.follower_or_subscriber_count.toLocaleLowerCase().replace(/\s/g,''))._value )
-            sumArray.push(numArr.reduce((a,b)=> a+b ))
+            console.log(numArr.length, ' before reduce')
+            if(numArr.length)sumArray.push(numArr.reduce((a,b)=> a+b ))
         })
         console.log(sumArray)
         const x = data.filter((influencer, i) => sumArray[i] > range1 && sumArray[i] < range2)

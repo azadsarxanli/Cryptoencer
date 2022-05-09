@@ -1,28 +1,17 @@
 import './assets/css/App.css';
-import Header from './components/Header'
-import { Fragment } from 'react';
-import Main from './components/Main';
-import Partner from './components/Partner';
-import Table from './components/Table';
-import Promo from './components/Promo';
-import Book from './components/Book';
+import {BrowserRouter,Routes,Route} from "react-router-dom";
+import Home from './Pages/Home'
+import Login from './Pages/Login';
+
 
 function App() {
   return (
-    <Fragment>
-      <Header/>
-
-      <Main/>
-
-      <Partner/>
-
-      <Book/>
-
-      <Table/>
-
-      <Promo/>
-
-    </Fragment>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

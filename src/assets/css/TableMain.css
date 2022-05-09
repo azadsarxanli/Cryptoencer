@@ -1,7 +1,6 @@
 .table-main{
     position: relative;
-    min-height: 666px;
-    max-height: 2361px;
+    height: 2361px;
 }
 
 .table-main-bg-1{
@@ -47,9 +46,9 @@
 }
 
 table{
+    height: 2361px;
     margin-top: 30px;
     width: 100%;
-    min-height: 400px;
     background: rgba(0, 0, 0, 0.04);
     backdrop-filter: blur(105px);
     border-collapse: collapse;
@@ -88,10 +87,16 @@ thead th:nth-child(3){
 
 thead th:nth-child(4){
     width: 25%;
+    border-top-right-radius: 30px;
 }
-
+/* 
 thead th:nth-child(5){
     border-top-right-radius: 30px;
+} */
+
+.table-tbody-tr{
+    height: 50px !important;
+    vertical-align: top;
 }
 
 tbody{
@@ -103,6 +108,7 @@ tbody{
 tbody tr{
     text-align: center;
     vertical-align: top;
+    /* border-bottom: 1px solid #FFFFFF; */
 }
 
 tbody tr td{
@@ -113,6 +119,7 @@ tbody tr td{
     line-height: 139.7%;
     text-align: center;
     color: #FFFFFF;
+    vertical-align: top;
 }
 
 tbody tr td{
@@ -190,7 +197,7 @@ tbody tr td:nth-child(1) p{
     thead th:nth-child(3),
     thead th:nth-child(4),
     thead th:nth-child(5){
-        display: none;
+        /* display: none; */
     }
 
     tbody tr td{
@@ -204,7 +211,7 @@ tbody tr td:nth-child(1) p{
     tbody tr td:nth-child(3),
     tbody tr td:nth-child(4),
     tbody tr td:nth-child(5){
-        display: none;
+        /* display: none; */
     }
 
     .table-socials-container{
@@ -222,5 +229,11 @@ tbody tr td:nth-child(1) p{
     .table-avatar img{
         width: 60px;
         height: 60px;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width:1199px){
+    .table-main{
+        margin-top: 20%;
     }
 }

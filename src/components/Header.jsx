@@ -1,6 +1,8 @@
 import React from 'react'
 import '../assets/css/Header.css'
 import Logo from '../assets/img/logo.png'
+import Logo1 from '../assets/img/logov1.png'
+import Logo2 from '../assets/img/logov2.png'
 import DiscoBall from '../assets/img/disco-ball.png'
 
 const Header = () => {
@@ -9,7 +11,7 @@ const Header = () => {
         <header>
 
             <div className="logo">
-                <img src={Logo} alt="" />
+                <img src={Logo1} alt="" />
 
                 <p>Cryptoencer</p>
             </div>

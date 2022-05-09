@@ -38,8 +38,8 @@ const Pagination = (props) => {
       <ul className="page-list">
         <li className="page-item-backward" style={{ cursor: 'pointer' }} onClick={backward}>«</li>
         {block.map((number) => (
-          <li key={number} className="page-item" onClick={paginate}>
-            <a
+          <li key={number} className="page-item">
+            <a onClick={paginate}
               href=""
               className={
                 number === props.currentPage
